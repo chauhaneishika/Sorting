@@ -11,7 +11,7 @@ public class CommonElements {
             if(a[i] == b[j]) {
                 ans.add(a[i]);
                 i++;
-                j--;
+                j++;
             }
             else if(a[i] < b[j]) i++;
             else j++;
