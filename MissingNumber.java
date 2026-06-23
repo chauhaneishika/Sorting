@@ -3,7 +3,9 @@ public class MissingNumber {
         int[] arr = {5,2,8,4,1,6,7,3};
         mergeSort(arr);
         for(int ele : arr) System.out.print(ele + " ");
-        missingNumber(arr);
+        System.out.println();
+        MissingNumber obj = new MissingNumber();
+        System.out.println(obj.missingNumber(arr));
     }
     private static void mergeSort(int[] arr){
         int n = arr.length;
@@ -49,7 +51,7 @@ public class MissingNumber {
         }
         return n;
     }
-    private void swap(int[] arr, int i,int idx) {
+    private static void swap(int[] arr, int i,int idx) {
        int temp = arr[i];
        arr[i] = arr[idx];
        arr[idx] = temp;
